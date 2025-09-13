@@ -1,0 +1,215 @@
+{% extends "base.html" %}
+
+{% block title %}Contact - AdMonetized Site{% endblock %}
+
+{% block content %}
+<!-- Hero Section -->
+<section class="hero-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <!-- Top Banner Ad -->
+                <div class="ad-container ad-banner mb-4">
+                    <div id="adsterra-banner-contact-top">
+                        <script>
+                            var adsterra_pub = '{{ publisher_id }}';
+                            var adsterra_type = '2';
+                            var adsterra_sid = 'adsterra-banner-contact-top';
+                            (function() {
+                                var script = document.createElement('script');
+                                script.src = 'https://www.adsterra.com/ads.js';
+                                script.async = true;
+                                document.head.appendChild(script);
+                            })();
+                        </script>
+                    </div>
+                </div>
+                
+                <h1 class="display-4 fw-bold text-center">Contact Us</h1>
+                <p class="lead text-center">Get in touch with our team for support, questions, or partnership opportunities</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Main Content -->
+<section class="content-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8">
+                <div class="row">
+                    <div class="col-12 mb-4">
+                        <h2>Get In Touch</h2>
+                        <p class="lead">Have questions about monetizing your website? Need technical support? We're here to help!</p>
+                        
+                        <div class="card">
+                            <div class="card-body">
+                                <form id="contact-form">
+                                    <div class="row">
+                                        <div class="col-md-6 mb-3">
+                                            <label for="firstName" class="form-label">First Name</label>
+                                            <input type="text" class="form-control" id="firstName" required>
+                                        </div>
+                                        <div class="col-md-6 mb-3">
+                                            <label for="lastName" class="form-label">Last Name</label>
+                                            <input type="text" class="form-control" id="lastName" required>
+                                        </div>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="email" class="form-label">Email Address</label>
+                                        <input type="email" class="form-control" id="email" required>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="subject" class="form-label">Subject</label>
+                                        <select class="form-select" id="subject" required>
+                                            <option value="">Choose a subject</option>
+                                            <option value="general">General Inquiry</option>
+                                            <option value="technical">Technical Support</option>
+                                            <option value="partnership">Partnership</option>
+                                            <option value="billing">Billing Question</option>
+                                        </select>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="message" class="form-label">Message</label>
+                                        <textarea class="form-control" id="message" rows="5" required></textarea>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary">Send Message</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- In-Content Ad -->
+                    <div class="col-12 mb-4">
+                        <div class="ad-container ad-banner">
+                            <div id="adsterra-banner-contact-middle">
+                                <script>
+                                    var adsterra_pub = '{{ publisher_id }}';
+                                    var adsterra_type = '2';
+                                    var adsterra_sid = 'adsterra-banner-contact-middle';
+                                    (function() {
+                                        var script = document.createElement('script');
+                                        script.src = 'https://www.adsterra.com/ads.js';
+                                        script.async = true;
+                                        document.head.appendChild(script);
+                                    })();
+                                </script>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-12 mb-4">
+                        <h3>Frequently Asked Questions</h3>
+                        <div class="accordion" id="faqAccordion">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="faq1">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1">
+                                        How do I get started with Adsterra?
+                                    </button>
+                                </h2>
+                                <div id="collapse1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body">
+                                        Simply sign up at <a href="https://www.adsterra.com" target="_blank">adsterra.com</a>, get your publisher ID, and add it to your website. The integration is quick and easy!
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="faq2">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2">
+                                        What's the minimum payout threshold?
+                                    </button>
+                                </h2>
+                                <div id="collapse2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body">
+                                        Adsterra's minimum payout is $5 for most payment methods, making it easy to start earning quickly.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="faq3">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3">
+                                        How often are payments made?
+                                    </button>
+                                </h2>
+                                <div id="collapse3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body">
+                                        Payments are made monthly, typically within 30 days of the end of each month.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Sidebar -->
+            <div class="col-lg-4">
+                <div class="ad-container ad-sidebar mb-4">
+                    <div id="adsterra-sidebar-contact">
+                        <script>
+                            var adsterra_pub = '{{ publisher_id }}';
+                            var adsterra_type = '2';
+                            var adsterra_sid = 'adsterra-sidebar-contact';
+                            (function() {
+                                var script = document.createElement('script');
+                                script.src = 'https://www.adsterra.com/ads.js';
+                                script.async = true;
+                                document.head.appendChild(script);
+                            })();
+                        </script>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <div class="card-header">
+                        <h5>Contact Information</h5>
+                    </div>
+                    <div class="card-body">
+                        <p><i class="fas fa-envelope me-2"></i> <strong>Email:</strong><br>support@admonetized.com</p>
+                        <p><i class="fas fa-phone me-2"></i> <strong>Phone:</strong><br>+1 (555) 123-4567</p>
+                        <p><i class="fas fa-clock me-2"></i> <strong>Hours:</strong><br>Mon-Fri 9AM-6PM EST</p>
+                    </div>
+                </div>
+                
+                <div class="card mt-3">
+                    <div class="card-header">
+                        <h5>Quick Links</h5>
+                    </div>
+                    <div class="card-body">
+                        <ul class="list-unstyled">
+                            <li><a href="https://www.adsterra.com" target="_blank" class="text-decoration-none">Adsterra Dashboard</a></li>
+                            <li><a href="https://www.adsterra.com/help" target="_blank" class="text-decoration-none">Help Center</a></li>
+                            <li><a href="https://www.adsterra.com/terms" target="_blank" class="text-decoration-none">Terms of Service</a></li>
+                            <li><a href="https://www.adsterra.com/privacy" target="_blank" class="text-decoration-none">Privacy Policy</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
+
+{% block extra_js %}
+<script>
+// Contact form handling
+document.getElementById('contact-form').addEventListener('submit', function(e) {
+    e.preventDefault();
+    
+    // Get form data
+    const formData = {
+        firstName: document.getElementById('firstName').value,
+        lastName: document.getElementById('lastName').value,
+        email: document.getElementById('email').value,
+        subject: document.getElementById('subject').value,
+        message: document.getElementById('message').value
+    };
+    
+    // Simulate form submission (in production, you'd send this to your backend)
+    alert('Thank you for your message! We\'ll get back to you soon.');
+    
+    // Reset form
+    this.reset();
+});
+</script>
+{% endblock %}

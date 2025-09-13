@@ -1,0 +1,170 @@
+{% extends "base.html" %}
+
+{% block title %}Home - AdMonetized Site{% endblock %}
+
+{% block content %}
+<!-- Hero Section with Top Banner Ad -->
+<section class="hero-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <!-- Top Banner Ad -->
+                <div class="ad-container ad-banner mb-4">
+                    <div id="adsterra-banner-top">
+                        <!-- Adsterra Banner Ad will be loaded here -->
+                        <script>
+                            var adsterra_pub = '{{ publisher_id }}';
+                            var adsterra_type = '2';
+                            var adsterra_sid = 'adsterra-banner-top';
+                            (function() {
+                                var script = document.createElement('script');
+                                script.src = 'https://www.adsterra.com/ads.js';
+                                script.async = true;
+                                document.head.appendChild(script);
+                            })();
+                        </script>
+                    </div>
+                </div>
+                
+                <h1 class="display-4 fw-bold text-center">Welcome to AdMonetized</h1>
+                <p class="lead text-center">Discover amazing content while supporting creators through ad revenue</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Main Content Section -->
+<section class="content-section">
+    <div class="container">
+        <div class="row">
+            <!-- Main Content -->
+            <div class="col-lg-8">
+                <div class="row">
+                    <div class="col-12 mb-4">
+                        <h2>Latest Articles</h2>
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">How to Monetize Your Website</h5>
+                                <p class="card-text">Learn the best strategies for earning money through your website using display ads, affiliate marketing, and more.</p>
+                                <a href="#" class="btn btn-primary">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-12 mb-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Ad Revenue Optimization Tips</h5>
+                                <p class="card-text">Discover proven methods to increase your ad revenue and maximize your website's earning potential.</p>
+                                <a href="#" class="btn btn-primary">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- In-Content Ad -->
+                    <div class="col-12 mb-4">
+                        <div class="ad-container ad-banner">
+                            <div id="adsterra-banner-middle">
+                                <script>
+                                    var adsterra_pub = '{{ publisher_id }}';
+                                    var adsterra_type = '2';
+                                    var adsterra_sid = 'adsterra-banner-middle';
+                                    (function() {
+                                        var script = document.createElement('script');
+                                        script.src = 'https://www.adsterra.com/ads.js';
+                                        script.async = true;
+                                        document.head.appendChild(script);
+                                    })();
+                                </script>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-12 mb-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Content Creation Strategies</h5>
+                                <p class="card-text">Create engaging content that keeps visitors on your site longer and increases ad impressions.</p>
+                                <a href="#" class="btn btn-primary">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Sidebar with Ads -->
+            <div class="col-lg-4">
+                <div class="ad-container ad-sidebar mb-4">
+                    <div id="adsterra-sidebar">
+                        <script>
+                            var adsterra_pub = '{{ publisher_id }}';
+                            var adsterra_type = '2';
+                            var adsterra_sid = 'adsterra-sidebar';
+                            (function() {
+                                var script = document.createElement('script');
+                                script.src = 'https://www.adsterra.com/ads.js';
+                                script.async = true;
+                                document.head.appendChild(script);
+                            })();
+                        </script>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <div class="card-header">
+                        <h5>Quick Stats</h5>
+                    </div>
+                    <div class="card-body">
+                        <p><strong>Total Visitors:</strong> <span id="visitor-count">Loading...</span></p>
+                        <p><strong>Page Views:</strong> <span id="page-views">Loading...</span></p>
+                        <p><strong>Ad Revenue:</strong> $<span id="ad-revenue">0.00</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Bottom Banner Ad -->
+<section class="py-4">
+    <div class="container">
+        <div class="ad-container ad-banner">
+            <div id="adsterra-banner-bottom">
+                <script>
+                    var adsterra_pub = '{{ publisher_id }}';
+                    var adsterra_type = '2';
+                    var adsterra_sid = 'adsterra-banner-bottom';
+                    (function() {
+                        var script = document.createElement('script');
+                        script.src = 'https://www.adsterra.com/ads.js';
+                        script.async = true;
+                        document.head.appendChild(script);
+                    })();
+                </script>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
+
+{% block extra_js %}
+<script>
+// Load visitor statistics
+fetch('/api/visitor-count')
+    .then(response => response.json())
+    .then(data => {
+        document.getElementById('visitor-count').textContent = data.visitors.toLocaleString();
+        document.getElementById('page-views').textContent = data.page_views.toLocaleString();
+    })
+    .catch(error => {
+        console.log('Error loading visitor count:', error);
+    });
+
+// Simulate ad revenue (in production, this would come from your ad network)
+let adRevenue = 0;
+setInterval(() => {
+    adRevenue += Math.random() * 0.01;
+    document.getElementById('ad-revenue').textContent = adRevenue.toFixed(2);
+}, 5000);
+</script>
+{% endblock %}

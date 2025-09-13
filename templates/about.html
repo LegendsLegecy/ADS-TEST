@@ -1,0 +1,163 @@
+{% extends "base.html" %}
+
+{% block title %}About - AdMonetized Site{% endblock %}
+
+{% block content %}
+<!-- Hero Section -->
+<section class="hero-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <!-- Top Banner Ad -->
+                <div class="ad-container ad-banner mb-4">
+                    <div id="adsterra-banner-about-top">
+                        <script>
+                            var adsterra_pub = '{{ publisher_id }}';
+                            var adsterra_type = '2';
+                            var adsterra_sid = 'adsterra-banner-about-top';
+                            (function() {
+                                var script = document.createElement('script');
+                                script.src = 'https://www.adsterra.com/ads.js';
+                                script.async = true;
+                                document.head.appendChild(script);
+                            })();
+                        </script>
+                    </div>
+                </div>
+                
+                <h1 class="display-4 fw-bold text-center">About Us</h1>
+                <p class="lead text-center">Learn more about our mission and how we help content creators monetize their websites</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Main Content -->
+<section class="content-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8">
+                <div class="row">
+                    <div class="col-12 mb-4">
+                        <h2>Our Mission</h2>
+                        <p class="lead">We believe that quality content creators should be rewarded for their efforts. Our platform helps you monetize your website through strategic ad placement while maintaining a great user experience.</p>
+                        
+                        <h3>What We Offer</h3>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">
+                                <i class="fas fa-chart-line text-primary me-2"></i>
+                                <strong>High-Quality Ad Networks:</strong> We partner with premium ad networks like Adsterra to ensure you get the best revenue rates.
+                            </li>
+                            <li class="list-group-item">
+                                <i class="fas fa-mobile-alt text-primary me-2"></i>
+                                <strong>Mobile-Optimized:</strong> All our ad units are fully responsive and optimized for mobile devices.
+                            </li>
+                            <li class="list-group-item">
+                                <i class="fas fa-shield-alt text-primary me-2"></i>
+                                <strong>Safe & Compliant:</strong> All ads are thoroughly vetted to ensure they're safe and comply with industry standards.
+                            </li>
+                            <li class="list-group-item">
+                                <i class="fas fa-tachometer-alt text-primary me-2"></i>
+                                <strong>Real-Time Analytics:</strong> Track your performance with detailed analytics and reporting.
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <!-- In-Content Ad -->
+                    <div class="col-12 mb-4">
+                        <div class="ad-container ad-banner">
+                            <div id="adsterra-banner-about-middle">
+                                <script>
+                                    var adsterra_pub = '{{ publisher_id }}';
+                                    var adsterra_type = '2';
+                                    var adsterra_sid = 'adsterra-banner-about-middle';
+                                    (function() {
+                                        var script = document.createElement('script');
+                                        script.src = 'https://www.adsterra.com/ads.js';
+                                        script.async = true;
+                                        document.head.appendChild(script);
+                                    })();
+                                </script>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-12 mb-4">
+                        <h3>How It Works</h3>
+                        <div class="row">
+                            <div class="col-md-4 mb-3">
+                                <div class="card h-100">
+                                    <div class="card-body text-center">
+                                        <i class="fas fa-user-plus fa-3x text-primary mb-3"></i>
+                                        <h5 class="card-title">1. Sign Up</h5>
+                                        <p class="card-text">Create your account and get your publisher ID from Adsterra.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-3">
+                                <div class="card h-100">
+                                    <div class="card-body text-center">
+                                        <i class="fas fa-code fa-3x text-primary mb-3"></i>
+                                        <h5 class="card-title">2. Integrate</h5>
+                                        <p class="card-text">Add our ad code to your website with just a few lines of code.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-3">
+                                <div class="card h-100">
+                                    <div class="card-body text-center">
+                                        <i class="fas fa-dollar-sign fa-3x text-primary mb-3"></i>
+                                        <h5 class="card-title">3. Earn</h5>
+                                        <p class="card-text">Start earning money from your website traffic immediately.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Sidebar -->
+            <div class="col-lg-4">
+                <div class="ad-container ad-sidebar mb-4">
+                    <div id="adsterra-sidebar-about">
+                        <script>
+                            var adsterra_pub = '{{ publisher_id }}';
+                            var adsterra_type = '2';
+                            var adsterra_sid = 'adsterra-sidebar-about';
+                            (function() {
+                                var script = document.createElement('script');
+                                script.src = 'https://www.adsterra.com/ads.js';
+                                script.async = true;
+                                document.head.appendChild(script);
+                            })();
+                        </script>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <div class="card-header">
+                        <h5>Quick Facts</h5>
+                    </div>
+                    <div class="card-body">
+                        <p><strong>Founded:</strong> 2024</p>
+                        <p><strong>Publishers:</strong> 1,000+</p>
+                        <p><strong>Total Revenue:</strong> $50,000+</p>
+                        <p><strong>Countries:</strong> 50+</p>
+                    </div>
+                </div>
+                
+                <div class="card mt-3">
+                    <div class="card-header">
+                        <h5>Get Started</h5>
+                    </div>
+                    <div class="card-body">
+                        <p>Ready to start earning? Sign up with Adsterra today!</p>
+                        <a href="https://www.adsterra.com" target="_blank" class="btn btn-success w-100">Sign Up Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
