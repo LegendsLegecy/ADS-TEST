@@ -21,6 +21,11 @@ def contact():
     """Contact page with ads"""
     return render_template('contact.html', publisher_id=ADSTERRA_PUBLISHER_ID)
 
+@app.route('/ads')
+def ads():
+    """Maximum ads page for revenue generation"""
+    return render_template('ads.html', publisher_id=ADSTERRA_PUBLISHER_ID)
+
 @app.route('/api/visitor-count')
 def visitor_count():
     """API endpoint for visitor tracking (can be used for analytics)"""

@@ -1,0 +1,321 @@
+{% extends "base.html" %}
+
+{% block title %}Ad Gallery - AdMonetized Site{% endblock %}
+
+{% block extra_css %}
+<style>
+    .ad-page {
+        background: #f8f9fa;
+        min-height: 100vh;
+    }
+    .ad-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 20px;
+        padding: 20px;
+    }
+    .ad-item {
+        background: white;
+        border: 2px solid #dee2e6;
+        border-radius: 8px;
+        padding: 15px;
+        text-align: center;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    .ad-label {
+        font-size: 12px;
+        color: #6c757d;
+        margin-bottom: 10px;
+        font-weight: bold;
+    }
+    .ad-container-small {
+        width: 300px;
+        height: 250px;
+        margin: 0 auto;
+        border: 1px dashed #ccc;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #f8f9fa;
+    }
+    .ad-container-banner {
+        width: 728px;
+        height: 90px;
+        margin: 0 auto;
+        border: 1px dashed #ccc;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #f8f9fa;
+    }
+    .ad-container-mobile {
+        width: 320px;
+        height: 50px;
+        margin: 0 auto;
+        border: 1px dashed #ccc;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #f8f9fa;
+    }
+    .ad-container-sidebar {
+        width: 160px;
+        height: 600px;
+        margin: 0 auto;
+        border: 1px dashed #ccc;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #f8f9fa;
+    }
+    .ad-container-large {
+        width: 300px;
+        height: 600px;
+        margin: 0 auto;
+        border: 1px dashed #ccc;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #f8f9fa;
+    }
+    .resolution-info {
+        background: #e9ecef;
+        padding: 10px;
+        border-radius: 4px;
+        margin-top: 10px;
+        font-size: 11px;
+        color: #495057;
+    }
+</style>
+{% endblock %}
+
+{% block content %}
+<div class="ad-page">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12">
+                <h1 class="text-center py-4">Ad Gallery - Maximum Revenue Page</h1>
+                <p class="text-center text-muted">This page is completely filled with ads for maximum revenue generation</p>
+            </div>
+        </div>
+        
+        <div class="ad-grid">
+            <!-- Ad 1: 300x250 Medium Rectangle -->
+            <div class="ad-item">
+                <div class="ad-label">Ad 1: Medium Rectangle</div>
+                <div class="ad-container-small">
+                    <script type="text/javascript">
+                        atOptions = {
+                            'key' : 'e98b8acd7620b6f029b0d78b8d107c4a',
+                            'format' : 'iframe',
+                            'height' : 250,
+                            'width' : 300,
+                            'params' : {}
+                        };
+                    </script>
+                    <script type="text/javascript" src="//www.highperformanceformat.com/e98b8acd7620b6f029b0d78b8d107c4a/invoke.js"></script>
+                </div>
+                <div class="resolution-info">Container: 300x250px | Ad: 300x250px</div>
+            </div>
+
+            <!-- Ad 2: 728x90 Leaderboard -->
+            <div class="ad-item">
+                <div class="ad-label">Ad 2: Leaderboard</div>
+                <div class="ad-container-banner">
+                    <script type="text/javascript">
+                        atOptions = {
+                            'key' : 'e98b8acd7620b6f029b0d78b8d107c4a',
+                            'format' : 'iframe',
+                            'height' : 90,
+                            'width' : 728,
+                            'params' : {}
+                        };
+                    </script>
+                    <script type="text/javascript" src="//www.highperformanceformat.com/e98b8acd7620b6f029b0d78b8d107c4a/invoke.js"></script>
+                </div>
+                <div class="resolution-info">Container: 728x90px | Ad: 728x90px</div>
+            </div>
+
+            <!-- Ad 3: 320x50 Mobile Banner -->
+            <div class="ad-item">
+                <div class="ad-label">Ad 3: Mobile Banner</div>
+                <div class="ad-container-mobile">
+                    <script type="text/javascript">
+                        atOptions = {
+                            'key' : 'e98b8acd7620b6f029b0d78b8d107c4a',
+                            'format' : 'iframe',
+                            'height' : 50,
+                            'width' : 320,
+                            'params' : {}
+                        };
+                    </script>
+                    <script type="text/javascript" src="//www.highperformanceformat.com/e98b8acd7620b6f029b0d78b8d107c4a/invoke.js"></script>
+                </div>
+                <div class="resolution-info">Container: 320x50px | Ad: 320x50px</div>
+            </div>
+
+            <!-- Ad 4: 160x600 Wide Skyscraper -->
+            <div class="ad-item">
+                <div class="ad-label">Ad 4: Wide Skyscraper</div>
+                <div class="ad-container-sidebar">
+                    <script type="text/javascript">
+                        atOptions = {
+                            'key' : 'e98b8acd7620b6f029b0d78b8d107c4a',
+                            'format' : 'iframe',
+                            'height' : 600,
+                            'width' : 160,
+                            'params' : {}
+                        };
+                    </script>
+                    <script type="text/javascript" src="//www.highperformanceformat.com/e98b8acd7620b6f029b0d78b8d107c4a/invoke.js"></script>
+                </div>
+                <div class="resolution-info">Container: 160x600px | Ad: 160x600px</div>
+            </div>
+
+            <!-- Ad 5: 300x250 Medium Rectangle -->
+            <div class="ad-item">
+                <div class="ad-label">Ad 5: Medium Rectangle</div>
+                <div class="ad-container-small">
+                    <script type="text/javascript">
+                        atOptions = {
+                            'key' : 'e98b8acd7620b6f029b0d78b8d107c4a',
+                            'format' : 'iframe',
+                            'height' : 250,
+                            'width' : 300,
+                            'params' : {}
+                        };
+                    </script>
+                    <script type="text/javascript" src="//www.highperformanceformat.com/e98b8acd7620b6f029b0d78b8d107c4a/invoke.js"></script>
+                </div>
+                <div class="resolution-info">Container: 300x250px | Ad: 300x250px</div>
+            </div>
+
+            <!-- Ad 6: 300x600 Half Page -->
+            <div class="ad-item">
+                <div class="ad-label">Ad 6: Half Page</div>
+                <div class="ad-container-large">
+                    <script type="text/javascript">
+                        atOptions = {
+                            'key' : 'e98b8acd7620b6f029b0d78b8d107c4a',
+                            'format' : 'iframe',
+                            'height' : 600,
+                            'width' : 300,
+                            'params' : {}
+                        };
+                    </script>
+                    <script type="text/javascript" src="//www.highperformanceformat.com/e98b8acd7620b6f029b0d78b8d107c4a/invoke.js"></script>
+                </div>
+                <div class="resolution-info">Container: 300x600px | Ad: 300x600px</div>
+            </div>
+
+            <!-- Ad 7: 728x90 Leaderboard -->
+            <div class="ad-item">
+                <div class="ad-label">Ad 7: Leaderboard</div>
+                <div class="ad-container-banner">
+                    <script type="text/javascript">
+                        atOptions = {
+                            'key' : 'e98b8acd7620b6f029b0d78b8d107c4a',
+                            'format' : 'iframe',
+                            'height' : 90,
+                            'width' : 728,
+                            'params' : {}
+                        };
+                    </script>
+                    <script type="text/javascript" src="//www.highperformanceformat.com/e98b8acd7620b6f029b0d78b8d107c4a/invoke.js"></script>
+                </div>
+                <div class="resolution-info">Container: 728x90px | Ad: 728x90px</div>
+            </div>
+
+            <!-- Ad 8: 300x250 Medium Rectangle -->
+            <div class="ad-item">
+                <div class="ad-label">Ad 8: Medium Rectangle</div>
+                <div class="ad-container-small">
+                    <script type="text/javascript">
+                        atOptions = {
+                            'key' : 'e98b8acd7620b6f029b0d78b8d107c4a',
+                            'format' : 'iframe',
+                            'height' : 250,
+                            'width' : 300,
+                            'params' : {}
+                        };
+                    </script>
+                    <script type="text/javascript" src="//www.highperformanceformat.com/e98b8acd7620b6f029b0d78b8d107c4a/invoke.js"></script>
+                </div>
+                <div class="resolution-info">Container: 300x250px | Ad: 300x250px</div>
+            </div>
+
+            <!-- Ad 9: 160x600 Wide Skyscraper -->
+            <div class="ad-item">
+                <div class="ad-label">Ad 9: Wide Skyscraper</div>
+                <div class="ad-container-sidebar">
+                    <script type="text/javascript">
+                        atOptions = {
+                            'key' : 'e98b8acd7620b6f029b0d78b8d107c4a',
+                            'format' : 'iframe',
+                            'height' : 600,
+                            'width' : 160,
+                            'params' : {}
+                        };
+                    </script>
+                    <script type="text/javascript" src="//www.highperformanceformat.com/e98b8acd7620b6f029b0d78b8d107c4a/invoke.js"></script>
+                </div>
+                <div class="resolution-info">Container: 160x600px | Ad: 160x600px</div>
+            </div>
+
+            <!-- Ad 10: 320x50 Mobile Banner -->
+            <div class="ad-item">
+                <div class="ad-label">Ad 10: Mobile Banner</div>
+                <div class="ad-container-mobile">
+                    <script type="text/javascript">
+                        atOptions = {
+                            'key' : 'e98b8acd7620b6f029b0d78b8d107c4a',
+                            'format' : 'iframe',
+                            'height' : 50,
+                            'width' : 320,
+                            'params' : {}
+                        };
+                    </script>
+                    <script type="text/javascript" src="//www.highperformanceformat.com/e98b8acd7620b6f029b0d78b8d107c4a/invoke.js"></script>
+                </div>
+                <div class="resolution-info">Container: 320x50px | Ad: 320x50px</div>
+            </div>
+
+            <!-- Ad 11: 300x250 Medium Rectangle -->
+            <div class="ad-item">
+                <div class="ad-label">Ad 11: Medium Rectangle</div>
+                <div class="ad-container-small">
+                    <script type="text/javascript">
+                        atOptions = {
+                            'key' : 'e98b8acd7620b6f029b0d78b8d107c4a',
+                            'format' : 'iframe',
+                            'height' : 250,
+                            'width' : 300,
+                            'params' : {}
+                        };
+                    </script>
+                    <script type="text/javascript" src="//www.highperformanceformat.com/e98b8acd7620b6f029b0d78b8d107c4a/invoke.js"></script>
+                </div>
+                <div class="resolution-info">Container: 300x250px | Ad: 300x250px</div>
+            </div>
+
+            <!-- Ad 12: 728x90 Leaderboard -->
+            <div class="ad-item">
+                <div class="ad-label">Ad 12: Leaderboard</div>
+                <div class="ad-container-banner">
+                    <script type="text/javascript">
+                        atOptions = {
+                            'key' : 'e98b8acd7620b6f029b0d78b8d107c4a',
+                            'format' : 'iframe',
+                            'height' : 90,
+                            'width' : 728,
+                            'params' : {}
+                        };
+                    </script>
+                    <script type="text/javascript" src="//www.highperformanceformat.com/e98b8acd7620b6f029b0d78b8d107c4a/invoke.js"></script>
+                </div>
+                <div class="resolution-info">Container: 728x90px | Ad: 728x90px</div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
