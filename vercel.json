@@ -11,8 +11,5 @@
       "src": "/(.*)",
       "dest": "app.py"
     }
-  ],
-  "env": {
-    "ADSTERRA_PUBLISHER_ID": "@adsterra_publisher_id"
-  }
+  ]
 }
